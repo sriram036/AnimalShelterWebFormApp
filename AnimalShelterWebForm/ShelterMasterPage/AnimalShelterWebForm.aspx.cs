@@ -54,7 +54,7 @@ namespace AnimalShelterWebForm.ShelterMasterPage
                 con.Open();
                 //GridView1.DataSource = dataTable;
                 //GridView1.DataBind();
-                SqlDataSource1.SelectCommand = "SELECT * FROM [Animals]";
+                SqlDataSource1.SelectCommand = "spGetAllAnimals";
                 GridView1.DataBind();
             }
         }
